@@ -1,8 +1,8 @@
 import mysql from "mysql";
 
 export const db = mysql.createConnection({
-  host:'localhost',
+  host:'containers-us-west-101.railway.app',
   user:'root',
-  password:"",
-  database:"social_react"
+  password:"mehiyVnoODYCG4gAkxkv",
+  database:"railway"
 });
