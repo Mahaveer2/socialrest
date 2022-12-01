@@ -47,6 +47,13 @@ app.use("/api/posts",postRoutes)
 app.use("/api/comments",commentRoutes)
 app.use("/api/likes",likeRoutes)
 app.use("/api/relationships",relationRoutes )
+app.use("/api/info",(req,res) => {
+  res.status(200).json({
+    author:"mahaveer",
+    database:"mysql",
+    deubg:"false"
+  })
+} )
 
 app.listen(8800, () => {
   console.log("API WORKING")
